@@ -1,5 +1,4 @@
-package task3;
-import java.io.*;
+package Task3;
 public class LinkedList 
 {
 	    Node head;
@@ -26,7 +25,7 @@ public class LinkedList
 	    {
 	        if (prev_node == null)
 	        {
-	            System.out.println("The given previous node cannot be null");
+	            logger.log("The given previous node cannot be null");
 	            return;
 	        }
 	        Node new_node = new Node(new_data);
@@ -82,7 +81,7 @@ public class LinkedList
 	        Node tnode = head;
 	        while (tnode != null)
 	        {
-	            System.out.print(tnode.data + " ");
+	            logger.log(tnode.data + " ");
 	            tnode = tnode.next;
 	        }
 
@@ -99,15 +98,15 @@ public class LinkedList
 	        list.insertAfter(list.head.next, 58);
 	        list.insertAtEnd(4930);
 
-	        System.out.println("Elements in the Linked list: ");
+	        logger.log("Elements in the Linked list: ");
 	        list.printList();
 
-	        System.out.println("\nAfter deleting an element: ");
+	        logger.log("\nAfter deleting an element: ");
 	        list.deleteNode(4);
 	        list.deleteNode(2);
 	        list.printList();
 
-	        System.out.println();
+	        logger.log();
 	    }
 }
 	
