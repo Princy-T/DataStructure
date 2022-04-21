@@ -1,4 +1,4 @@
-package task3;
+package Task3;
 
 public class Stack 
 {
@@ -17,12 +17,12 @@ public class Stack
     {
         if (isFull()) //condition to check whether the stack is full
         {
-            System.out.println("Stack OverFlow");
+            logger.log("Stack OverFlow");
             
             System.exit(1);// terminates the program
         }
 
-        System.out.println("Pushed inside the stack: " + x);
+        logger.log("Pushed inside the stack: " + x);
         arr[++top] = x;
     }
 
@@ -31,7 +31,7 @@ public class Stack
 
         if (isEmpty()) //condition to check whether the stack is empty 
         {
-            System.out.println("STACK EMPTY");
+            logger.log("STACK EMPTY");
             
             System.exit(1);// terminates the program
         }
@@ -58,7 +58,7 @@ public class Stack
     {
         for (int i = 0; i <= top; i++) 
         {
-            System.out.print(arr[i] + " ");
+            logger.log(arr[i] + " ");
         }
     }
 
@@ -73,7 +73,7 @@ public class Stack
         stack.push(612);
         stack.push(49);
 
-        System.out.println("Elements in the Stack: ");
+        logger.log("Elements in the Stack: ");
         
         //print the stack elements
         stack.printStack();
@@ -82,7 +82,7 @@ public class Stack
         stack.pop();
         stack.pop();
         
-        System.out.println("\nAfter deleting the element:");
+        logger.log("\nAfter deleting the element:");
         
         //print the stack elements
         stack.printStack();
