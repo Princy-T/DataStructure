@@ -1,4 +1,4 @@
-package task3;
+package Task3;
 
 public class Queue 
 {
@@ -33,7 +33,7 @@ public class Queue
 	        {
 	            if (isFull())
 	            {
-	                System.out.println("Queue is full...");
+	                logger.log("Queue is full...");
 	            } 
 	            else 
 	            {
@@ -41,7 +41,7 @@ public class Queue
 	                    front = 0;// Assigning a index to insert the element
 	                rear++; 
 	                items[rear] = element;
-	                System.out.println("Inserted " + element);
+	                logger.log("Inserted " + element);
 	            }
 	        }
 
@@ -50,7 +50,7 @@ public class Queue
 	            int element;
 	            if (isEmpty())
 	            {
-	                System.out.println("Queue is empty...");
+	                logger.log("Queue is empty...");
 	                return (-1);
 	            } 
 	            else 
@@ -65,7 +65,7 @@ public class Queue
 	                {
 	                    front++;
 	                }
-	                System.out.println("\nDeleted elements:" + element);
+	                logger.log("\nDeleted elements:" + element);
 	                return (element);
 	            }
 	        }
@@ -75,13 +75,13 @@ public class Queue
 	            int i;
 	            if (isEmpty()) 
 	            {
-	                System.out.println("Queue is Empty...");
+	                logger.log("Queue is Empty...");
 	            } 
 	            else 
 	            {
-	                System.out.println("Elements in the queue: ");
+	                logger.log("Elements in the queue: ");
 	                for (i = front; i <= rear; i++)
-	                    System.out.print(items[i] + "  ");
+	                    logger.log(items[i] + "  ");
 	            }
 	        }
 	        public static void main(String[] args) 
