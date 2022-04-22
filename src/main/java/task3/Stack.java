@@ -1,3 +1,4 @@
+package task3;
 public class Stack 
 {
     private int arr[];// store elements of stack in arr variable
