@@ -17,8 +17,8 @@ public class LinkedList
 	    public void insertAtBeginning(int newData)//insert at the beginning 
 	    {
 	        Node newNode = new Node(newData);//object creation for new node
-	        new_node.next = head;//assigning head to the new node
-	        head = new_node;//assigning new node as head
+	        newNode.next = head;//assigning head to the new node
+	        head = newNode;//assigning new node as head
 	    }
 
 	    public void insertAfter(Node prevNode, int newData)//insert at the center
