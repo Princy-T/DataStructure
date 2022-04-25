@@ -3,8 +3,9 @@ package Task3;
 public class Queue 
 {
 	    int length = 4;
-	    int items[] = new int[length];
-	    int front, rear;
+	    int[] items = new int[length];
+	    int front;
+	    int	rear;
 
 	    Queue() // while queue is empty the front and rear assign -1
 	    {
