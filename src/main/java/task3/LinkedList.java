@@ -14,41 +14,41 @@ public class LinkedList
 	        }
 	    }
 
-	    public void insertAtBeginning(int new_data)//insert at the beginning 
+	    public void insertAtBeginning(int newData)//insert at the beginning 
 	    {
-	        Node new_node = new Node(new_data);//object creation for new node
+	        Node newNode = new Node(newData);//object creation for new node
 	        new_node.next = head;//assigning head to the new node
 	        head = new_node;//assigning new node as head
 	    }
 
-	    public void insertAfter(Node prev_node, int new_data)//insert at the center
+	    public void insertAfter(Node prevNode, int newData)//insert at the center
 	    {
-	        if (prev_node == null)
+	        if (prevNode == null)
 	        {
 	            logger.log("The given previous node cannot be null");
 	            return;
 	        }
-	        Node new_node = new Node(new_data);
-	        new_node.next = prev_node.next;//Assigning prev node next to new node next
-	        prev_node.next = new_node;//Point to the address in the new node
+	        Node newNode = new Node(newData);
+	        newNode.next = prevNode.next;//Assigning prev node next to new node next
+	        prevNode.next = newNode;//Point to the address in the new node
 	    }
 
-	    public void insertAtEnd(int new_data)//insert at the end
+	    public void insertAtEnd(int newData)//insert at the end
 	    {
-	        Node new_node = new Node(new_data);
+	        Node newNode = new Node(newData);
 
 	        if (head == null)
 	        {
-	            head = new Node(new_data);
+	            head = new Node(newData);
 	            return;
 	        }
 
-	        new_node.next = null;
+	        newNode.next = null;
 
 	        Node last = head;//assigning last node as head
 	        while (last.next != null)
 	            last = last.next;//moving the pointer to the last node to insert at the end
-	        last.next = new_node;//inserting the new node at last
+	        last.next = newNode;//inserting the new node at last
 	        return;
 	    }
 
