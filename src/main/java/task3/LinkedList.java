@@ -47,11 +47,9 @@ public class LinkedList
 
 	        Node last = head;//assigning last node as head
 	        while (last.next != null)
-		{
 	            	last = last.next;//moving the pointer to the last node to insert at the end
 	        	last.next = newNode;//inserting the new node at last
 	        	return;
-		}
 	    }
 
 	    void deleteNode(int position)//deleting a node
